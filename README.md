@@ -1,5 +1,3 @@
-# project2
-Repos for project2
 # Unit 15: Project 2
 
 ## Overview
