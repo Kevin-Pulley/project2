@@ -21,7 +21,6 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Routes
-
 require("./routes/cards.js")(app);
 require("./routes/class.js")(app);
 require("./routes/deck.js")(app);
