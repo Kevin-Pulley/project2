@@ -9,7 +9,7 @@ let classController = {
         res.json(req.params.name);
     },
     getById: (req, res) => {
-        res.json(req.params.name);
+        res.json(req.params.id);
     },
     getByName: (req, res) => {
         res.json(req.params.name);
@@ -18,10 +18,10 @@ let classController = {
         res.json(req.params.name);
     },
     create: (req, res) => {
-        res.json(req.params.name);
+        res.json(req.params.body);
     },
     edit: (req, res) => {
-        res.json(req.params.name);
+        res.json(req.params.body);
     },
     delete: (req, res) => {
         res.json(req.params.name);
