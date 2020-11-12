@@ -1,6 +1,6 @@
 const Deck = require("../models/deck.js");
 
-let classController = {
+let deckController = {
     index: (req, res) => {
         res.json(req.params.name);
     },

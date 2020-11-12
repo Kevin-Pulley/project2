@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const setController = require("../controllers/decks.js");
+const deckController = require("../controllers/deck.js");
 
 router.get("/showdeck/:name", deckController.showDeck);
 router.get("/", deckController.index);
