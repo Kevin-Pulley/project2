@@ -29,7 +29,3 @@ let deckController = {
 }
 
 module.exports = deckController;
-<<<<<<< Billy
-
-=======
->>>>>>> Update deck.js

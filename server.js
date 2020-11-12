@@ -29,10 +29,6 @@ let classRoutes = require("./routes/class.js");
 app.use(classRoutes);
 let decksRoutes = require("./routes/decks.js");
 app.use(decksRoutes);
-<<<<<<< Billy
-
-=======
->>>>>>> Updating Route Info
 
 // Syncing our sequelize models and then starting our Express app
 db.sequelize.sync().then(function() {
