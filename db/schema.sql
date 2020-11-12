@@ -1,6 +1,3 @@
-CREATE madness_db;
-<<<<<<< Updated upstream
+CREATE DATABASE madness_db;
 
-=======
->>>>>>> Stashed changes
 USE madness_db;
