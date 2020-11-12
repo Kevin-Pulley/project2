@@ -29,7 +29,10 @@ let deckController = {
 }
 
 module.exports = deckController;
+<<<<<<< HEAD
 <<<<<<< Billy
 
 =======
 >>>>>>> Update deck.js
+=======
+>>>>>>> main
