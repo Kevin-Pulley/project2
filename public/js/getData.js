@@ -1,5 +1,4 @@
-
-
+// API Hearthstone Key Data
 module.exports = function (data) {
   const settings = {
     async: true,
