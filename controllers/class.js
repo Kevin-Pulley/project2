@@ -7,7 +7,7 @@ let classController = {
         res.json(req.params.name);
     },
     showClass: (req, res) => {
-       res.json()
+       res.json(req.params.name)
 
     },
     getById: (req, res) => {
