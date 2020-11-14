@@ -10,16 +10,11 @@
   </form>
   <p>View Cards By Class:</p>
   <div class="heroes">
-    {{#each thisClass}}
-    <a href="/api/classes/showclass/{{{this.name}}}" class="text-links">{{this.name}}</a>
+    {{#each classes}}
+    <a href="/class/{{{name}}}" class="text-links">{{name}}</a>
     {{/each}}
   </div>
-  <p>View JSON:</p>
-  <div class="nav">
-    <a href="/api/card" class="text-links">Cards</a>
-    <a href="/api/deck" class="text-links">Decks</a>
-    <a href="/api/class" class="text-links">Classes</a>
-  </div>
+
   
 </div>
 <div class="container" id="card-container"></div>
