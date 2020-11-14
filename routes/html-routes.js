@@ -12,7 +12,11 @@ module.exports = function(app) {
 
   // index route loads view.html
   app.get("/", function(req, res) {
+<<<<<<< Billy
     res.render("index");
+=======
+    res.render("card");
+>>>>>>> Auto stash before rebase of "Billy"
   });
 
   // card route loads card.handlebars
