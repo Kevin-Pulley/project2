@@ -3,6 +3,8 @@
 
 // const card = require("../models/card.js");
 // const Card = require("../models/card.js");
+
+
 const db = require("../models")
 let cardController = {
     index: (req, res) => {
