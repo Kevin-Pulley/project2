@@ -23,16 +23,18 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Routes
+require("./routes/html-routes.js")(app);
+
 let cardsRoutes = require("./routes/cards.js");
 app.use(cardsRoutes);
 let classRoutes = require("./routes/class.js");
 app.use(classRoutes);
 let decksRoutes = require("./routes/decks.js");
 app.use(decksRoutes);
-<<<<<<< HEAD
-=======
 
->>>>>>> main
+//app.use("/api/cards/", cardRoute);
+//  app.use("/api/sets", setRoute);
+//  app.use("/api/classes", classRoute);
 
 // Syncing our sequelize models and then starting our Express app
 db.sequelize.sync().then(function() {

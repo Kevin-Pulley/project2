@@ -1,6 +1,6 @@
 
-const Class = require("../models/class.js");
-
+const ClassData = require("../db/classData.json");
+const db = require("../models");
 let classController = {
     index: (req, res) => {
         res.json(req.params.name);
