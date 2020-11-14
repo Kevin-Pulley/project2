@@ -29,3 +29,4 @@ $("#card-container").on("click", "img", function () {
 
   $.post("/api/card", newCard);
 });
+
