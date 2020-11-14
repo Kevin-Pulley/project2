@@ -28,7 +28,7 @@ let cardController = {
         db.Cards.create({
             image_url : req.body.image_url,
             api_url: "test",
-            name: "req.body.name"
+            name: req.body.name
         })
     },
     edit: (req, res) => {

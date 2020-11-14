@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Billy
 module.exports ={
   classes:
@@ -45,6 +46,8 @@ module.exports ={
   ]
 }
 =======
+=======
+>>>>>>> main
 
 module.exports = {
 
@@ -83,5 +86,9 @@ classes:
   ]
 }
 
+<<<<<<< HEAD
   
 >>>>>>> Changes
+=======
+  
+>>>>>>> main
