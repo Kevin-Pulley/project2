@@ -1,7 +1,11 @@
 {
   "development": {
     "username": "root",
+<<<<<<< Billy
     "password": "Arrasmith913!",
+=======
+    "password": "Azxcvbnmkljt17",
+>>>>>>> More CSS Styling
     "database": "madness_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
