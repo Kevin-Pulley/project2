@@ -1,4 +1,5 @@
-
+module.exports ={
+  classes:
 [
     {
       "name": "Priest",
@@ -41,4 +42,4 @@
       "cards": []
     }
   ]
-
+}
