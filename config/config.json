@@ -1,6 +1,7 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
 <<<<<<< Billy
 <<<<<<< Billy
 <<<<<<< Billy
@@ -14,6 +15,9 @@
 =======
     "password": "sony1234",
 >>>>>>> Changes
+=======
+    "password": "Azxcvbnmkljt17",
+>>>>>>> main
     "database": "madness_db",
     "host": "127.0.0.1",
     "dialect": "mysql"

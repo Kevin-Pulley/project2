@@ -8,6 +8,11 @@
     text-align: center;
 }
 
+a,
+a.visited {
+  color: white;
+}
+
 /* Top Content */
 .top-content {
     margin: 20px 0px;
@@ -19,7 +24,7 @@
 
 /* Hearthstone Logo */
 #hearthstone-logo {
-    height: 100px;
+    height: 150px;
     margin: 0px 10px;
 }
 
@@ -41,6 +46,86 @@ body {
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
+=======
+.heroes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+}
+
+/* Card Container Begins Here */
+#card-container {
+  width: 200px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transform-origin: center center 0px;
+  transition: all .5s ease-out;
+  animation-name: animate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
+  z-index: 1;
+}
+
+#card-container:hover {
+    animation: unset;
+    margin-top: 18vh;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+@keyframes animate {
+  0% {
+    margin-top: 20vh;
+  }
+  50% {
+    margin-top: 18vh;
+  }
+  100% {
+    margin-top: 20vh;
+  }
+}
+/* Card Container Ends Here */
+
+/* Card Image */
+.card-image {
+    margin-top: 30px;
+}
+
+/* Page Title */
+.page-title {
+    margin: 20px 0 -40px 0;
+}
+
+/* Text Links Externals*/
+.text-links-external {
+    font-size: 26px;
+    margin: 20px 20px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Unordered List */
+ul {
+    margin: 60px 0 -40px 0;
+}
+
+/* Form */
+form {
+    margin: 20px;
+}
+
+
+>>>>>>> main
 /* Text Links */
 .text-links {
     text-decoration: none;
