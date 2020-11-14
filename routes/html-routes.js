@@ -4,15 +4,15 @@
 
 // Dependencies
 // =============================================================
-var path = require("path");
-
+let path = require("path");
+let classes = require("../db/classData.js")
 // Routes
 // =============================================================
 module.exports = function(app) {
 
   // index route loads view.html
   app.get("/", function(req, res) {
-    res.render("index");
+    res.render("index", classes);
   });
 
   // card route loads card.handlebars
