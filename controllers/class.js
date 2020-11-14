@@ -1,3 +1,9 @@
+<<<<<<< Billy
+=======
+// const Class = require("../models/class.js");
+const classData = require("../db/classData");
+const db = require("../models")
+>>>>>>> Changes
 
 const ClassData = require("../db/classData");
 const db = require("../models");
@@ -6,7 +12,8 @@ let classController = {
         res.json(req.params.name);
     },
     showClass: (req, res) => {
-        res.json(req.params.name);
+       res.json()
+
     },
     getById: (req, res) => {
         res.json(req.params.id);

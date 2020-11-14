@@ -4,8 +4,8 @@
 
 // Dependencies
 // =============================================================
-var path = require("path");
-
+let path = require("path");
+let classes = require("../db/classData.js")
 // Routes
 // =============================================================
 module.exports = function(app) {
@@ -13,10 +13,14 @@ module.exports = function(app) {
   // index route loads view.html
   app.get("/", function(req, res) {
 <<<<<<< Billy
+<<<<<<< Billy
     res.render("index");
 =======
     res.render("card");
 >>>>>>> Auto stash before rebase of "Billy"
+=======
+    res.render("index", classes);
+>>>>>>> Changes
   });
 
   // card route loads card.handlebars

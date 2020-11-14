@@ -3,6 +3,7 @@
     "username": "root",
 <<<<<<< Billy
 <<<<<<< Billy
+<<<<<<< Billy
     "password": "Arrasmith913!",
 =======
     "password": "Azxcvbnmkljt17",
@@ -10,6 +11,9 @@
 =======
     "password": "",
 >>>>>>> CSS
+=======
+    "password": "sony1234",
+>>>>>>> Changes
     "database": "madness_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
