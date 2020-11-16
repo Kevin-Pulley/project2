@@ -48,8 +48,6 @@ body {
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
-=======
 .heroes {
     display: flex;
     flex-wrap: wrap;
@@ -156,7 +154,6 @@ form {
 }
 
 
->>>>>>> main
 /* Text Links */
 .text-links {
     text-decoration: none;

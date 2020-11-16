@@ -18,6 +18,7 @@ $(document).ready(function () {
     });
   }
 
+<<<<<<< Updated upstream
   $.ajax(settings).done(function (response) {
     //console.log(response);
     for (var i = 0; i < 99; i++) {
@@ -40,6 +41,16 @@ $(document).ready(function () {
       $.post("/api/class/:card_id", cardId);
 
       const settings = {
+=======
+  
+
+$( document ).ready(function() {
+    // const classes = document.querySelector("#class")
+    let classes = $(".class-container").data("class");
+    console.log(classes)
+    
+    const settings = {
+>>>>>>> Stashed changes
         async: true,
         crossDomain: true,
         url: `https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/${cardName}`,
@@ -50,6 +61,7 @@ $(document).ready(function () {
           "x-rapidapi-host": "omgvamp-hearthstone-v1.p.rapidapi.com",
         },
       };
+<<<<<<< Updated upstream
 
       $.ajax(settings).done(function (data) {
         // let filter = data[0].filter(function (item) {
@@ -74,3 +86,51 @@ $(document).ready(function () {
     //   });
   });
 });
+=======
+    $.ajax(settings).done(function(response){
+        console.log(response)
+        for(var i = 0; i < 100; i++){
+
+            let b = $("<button>").attr("id", response[i].cardId)
+            b.text(response[i].name);
+            $(".class-container").append(b)
+        }
+      })    
+        // $("#class-container").html(`<div>"${response.name}"</div>`);
+
+$("#button").on("click", function () {
+  const searchId = $("#id").val();
+  console.log(id);
+  console.log(button);
+  const settings = {
+    async: true,
+    crossDomain: true,
+    url: `https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/${id}`,
+    method: "GET",
+    headers: {
+      "x-rapidapi-key": "e25253654bmshbe1d4ddbcd23335p1dc5a9jsndabf8328bd41",
+      "x-rapidapi-host": "omgvamp-hearthstone-v1.p.rapidapi.com",
+    },
+  };
+
+  $.ajax(settings).done(function (response) {
+    console.log(response);
+    $("#card-container").html(`<img src="${response[0].img}"/>`);
+  });
+});
+
+$("#card-container").on("click", "img", function () {
+  const img = $(this).attr("src");
+  console.log(img);
+  const newCard = {
+    image_url: img,
+    name: "test",
+    api_url: "test"
+  };
+
+  $.post("/api/card", newCard);
+});
+
+});
+
+>>>>>>> Stashed changes

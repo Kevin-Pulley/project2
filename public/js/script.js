@@ -4,7 +4,7 @@ $("#searchBtn").on("click", function () {
   const settings = {
     async: true,
     crossDomain: true,
-    url: `https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/${searchValue}`,
+    url: `https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/showcard${searchValue}`,
     method: "GET",
     headers: {
       "x-rapidapi-key": "e25253654bmshbe1d4ddbcd23335p1dc5a9jsndabf8328bd41",
@@ -30,11 +30,8 @@ $("#card-container").on("click", "img", function () {
   $.post("/api/card", newCard);
 });
 
-<<<<<<< HEAD
-=======
 
 
 
 
 
->>>>>>> main
