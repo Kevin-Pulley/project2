@@ -1,10 +1,19 @@
+
 <a href="/">
-  <h1 class="top-content"><img id="hearthstone-logo" src="img/HearthstoneLogo.png"> Card
-    API</h1>
+  <h1 class="top-content"><img id="hearthstone-logo" src="/img/HearthstoneLogo.png">
+    </h1>
 </a>
 <div class="text-links-external">
   <a href="javascript:history.back()">Back</a>
 </div>
-<h1 class="page-title">{{{thisClass.name}}} Card List</h1>
-{{#each thisClass.cards}} <a href="/api/cards/showcard/{{{this.name}}}"><img src="{{{this.img}}}" /></a>
-{{/each}}
+<h1 class="page-title">{{class}} Card List</h1>
+
+
+<div class="class-container" data-class="{{class}}"></div>
+
+
+<div class="container" id="card-container"></div>
+
+
+<script src="/js/getClasses.js"></script>
+<script src="/js/getCard.js"></script>

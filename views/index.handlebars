@@ -1,20 +1,18 @@
 <div class="container">
   <header>
-    <h1 class="top-content">Welcome To <a href="/"><img id="hearthstone-logo" src="img/HearthstoneLogo.png"></a> Card
+    <h1 class="top-content">Welcome to <a href="/"><img id="hearthstone-logo" src="/img/HearthstoneLogo.png"></a> Card
       API</h1>
   </header>
-  <p>Search For Card by Name! (Case Sensitive):</p>
+  <p>Search For Card By Name! (Case Sensitive):</p>
   <form autocomplete="off" spellcheck="false">
     <input class="input-field" name="name" id="search-input">
-    <button class="search-button" type="button" id="searchBtn">Search</button>
+    <button class="search-button" type="button" id="searchBtn" style="animation-delay:0.07s">Search</button>
   </form>
   <p>View Cards By Class:</p>
   <div class="heroes">
     {{#each classes}}
-    <a href="/class/{{{name}}}" class="text-links">{{name}}</a>
+    <a href="/class/{{{name}}}" class="text-links" id="class-links">{{name}}</a>
     {{/each}}
   </div>
-
-  
 </div>
 <div class="container" id="card-container"></div>
