@@ -6,7 +6,9 @@
 
 
 $( document ).ready(function() {
-    let classes = $(".card-container").data("class");
+    // const classes = document.querySelector("#class")
+    let classes = $(".class-container").data("class");
+    console.log(classes)
     const settings = {
         async: true,
         crossDomain: true,
@@ -18,10 +20,16 @@ $( document ).ready(function() {
         },
       };
     $.ajax(settings).done(function(response){
+        console.log(response)
+        for(var i = 0; i < 100; i++){
 
-         if(response[0].playerClass === classes){
-             let newClass = response[0].img
-         }
-        $("#class-container").html(`<img src="${response.img}"/>`);
+            let b = $("<button>").attr("id", response[i].cardId)
+            b.text(response[i].name);
+            $(".class-container").append(b)
+        }
+
+
+
+        // $("#class-container").html(`<div>"${response.name}"</div>`);
     })
 });
