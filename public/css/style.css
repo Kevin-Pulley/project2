@@ -35,11 +35,17 @@ a.visited {
 /* Body */
 body {
     background-image: url("/img/hearthstonebg.jpg");
+    /* min-height: 1000px; */
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     color: white;
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
+}
+
+html {
+    min-height: 1000px;
 }
 
 /* Container */
@@ -50,6 +56,7 @@ body {
     justify-content: space-between;
     max-width: 90%;
     margin: 0 auto;
+    /* height: 1000px; */
 }
 
 /* Heroes */
@@ -61,7 +68,7 @@ body {
 }
 
 /* ====== Card Container Begins Here ====== */
-#card-container {
+ /* #card-container {
   width: 200px;
   height: 300px;
   margin-left: auto;
@@ -76,15 +83,15 @@ body {
   animation-iteration-count: infinite;
   transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
   z-index: 1;
-}
+} */
 
 /* Card Hover */
-#card-container:hover {
+ /* #card-container:hover {
     animation: unset;
     margin-top: 18vh;
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-}
-
+}  */
+/* 
 @keyframes animate {
   0% {
     margin-top: 20vh;
@@ -95,7 +102,7 @@ body {
   100% {
     margin-top: 20vh;
   }
-}
+}  */
 /* ====== Card Container Ends Here ====== */
 
 #searchBtn {
@@ -183,9 +190,27 @@ form {
     transition: all 0.4s ease 0s;
 }
 
-/* Search Button */
+/* Button */
 button {
     padding: 10px;
+    background: goldenrod;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border-style: 5px solid goldenrod;
+    display: inline-block;
+    border: solid;
+    transition: all 0.4s ease 0s;
+}
+
+.main-button {
+    padding: 10px;
+    padding-left: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10px;
     background: goldenrod;
     font-family: "Courier New", Courier, monospace;
     color: white;
