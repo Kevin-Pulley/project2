@@ -34,9 +34,9 @@ a.visited {
 
 /* Body */
 body {
-    background-image: url("board.jpg");
+    background-image: url("/img/hearthstonebg.jpg");
     background-repeat: no-repeat;
-    background: #9e9e9e;
+    background-position: center;
     color: white;
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
@@ -167,7 +167,7 @@ form {
     border-radius: 10px;
     padding: 1px;
     margin: 20px 30px;
-    background: #8ad2ff;
+    background: goldenrod;
     font-size: 30px;
     border: solid;
     transition: all 0.4s ease 0s;
@@ -175,7 +175,7 @@ form {
 
 /* HOVER Text Links / Classes */
 .text-links:hover {
-    background: #434343;
+    background: #000000;
     letter-spacing: 1px;
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
@@ -186,13 +186,13 @@ form {
 /* Search Button */
 button {
     padding: 10px;
-    background: #8ad2ff;
+    background: goldenrod;
     font-family: "Courier New", Courier, monospace;
     color: white;
     font-size: 20px;
     border-radius: 10px;
     font-weight: bold;
-    border-style: 5px solid #8ad2ff;
+    border-style: 5px solid goldenrod;
     display: inline-block;
     border: solid;
     transition: all 0.4s ease 0s;
