@@ -6,5 +6,9 @@
   <a href="javascript:history.back()">Back</a>
 </div>
 <h1 class="page-title">{{{thisClass.name}}} Deck List</h1>
-{{#each thisClass.cards}} <a href="/api/cards/showcard/{{{this.name}}}"><img src="{{{this.img}}}" /></a>
+<div class="container" id="deck-container">
+{{#each thisClass.cards}} <a href="/api/deck/{{{this.name}}}"><img src="{{{this.img}}}" /></a>
 {{/each}}
+</div>
+
+<script src="/js/getDeck.js"></script>

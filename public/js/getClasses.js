@@ -15,6 +15,7 @@ $(document).ready(function () {
   function getName() {
     $.get("api/class/:card_id", function (req, res) {
       let id = req.params.name;
+      console.log(id)
     });
   }
 
