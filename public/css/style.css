@@ -207,10 +207,9 @@ button {
 
 .main-button {
     padding: 10px;
-    padding-left: 110px;
     margin-left: auto;
     margin-right: auto;
-    width: 10px;
+    width: 100px;
     background: goldenrod;
     font-family: "Courier New", Courier, monospace;
     color: white;
