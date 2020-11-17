@@ -17,7 +17,7 @@ let cardController = {
         res.json(req.params.name);
     },
     cardSearch: (req, res) => {
-        console.log("from cardsearch controller function")
+       
         res.json(req.params.name);
     },
     create: (req, res) => {

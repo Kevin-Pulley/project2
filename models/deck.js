@@ -7,6 +7,13 @@ module.exports = function (sequelize, DataTypes) {
         len: [1],
       },
     },
+    image_url: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1],
+      },
+    },
   });
   Decks.associate = function (models) {
     Decks.hasMany(models.Cards);
