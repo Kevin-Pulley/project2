@@ -1,4 +1,5 @@
-$("#searchBtn").on("click", function () {
+$("#cardSearchForm").on("submit", function () {
+  event.preventDefault();
   const searchValue = $("#search-input").val();
   console.log(searchValue);
   const settings = {

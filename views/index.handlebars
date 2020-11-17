@@ -4,9 +4,9 @@
       API</h1>
   </header>
   <p id="sub-title">Search For Card By Name! (Case Sensitive):</p>
-  <form autocomplete="off" spellcheck="false">
+  <form autocomplete="off" spellcheck="false" id="cardSearchForm">
     <input class="input-field" name="name" id="search-input">
-    <button class="search-button" type="button" id="searchBtn" style="animation-delay:0.07s">Search</button>
+    <input class="main-button" type="submit" id="searchBtn" style="animation-delay:0.07s" value="Search"></input>
     <button class="deck-button" type="button" id="deckBtn" style="animation-delay:0.07s">Deck</button>
   </form>
   <p id="sub-title">View Cards By Class:</p>
@@ -15,7 +15,6 @@
     <a href="/class/{{{name}}}" class="text-links" id="class-links">{{name}}</a>
     {{/each}}
   </div>
+  <div id="card-container"></div>
 </div>
-<div class="container" id="card-container"></div>
-
 
