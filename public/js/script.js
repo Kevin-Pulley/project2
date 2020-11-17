@@ -22,12 +22,12 @@ $("#card-container").on("click", "img", function () {
   const img = $(this).attr("src");
   console.log(img);
   const newCard = {
-    image_url: img,
     name: "test",
-    api_url: "test"
+    image_url: img,
+    
   };
 
-  $.post("/api/card", newCard);
+  $.post("/api/deck", newCard);
 });
 
 
