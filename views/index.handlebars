@@ -1,13 +1,15 @@
 <div class="container">
   <header>
-    <h1 class="top-content">Welcome to <a href="/"><img id="hearthstone-logo" src="/img/HearthstoneLogo.png"></a> Card
+    <h1 class="top-content">WELCOME TO <a href="/"><img id="hearthstone-logo" src="/img/HearthstoneLogo.png"></a> CARD
       API</h1>
   </header>
-  <p>Search For Card By Name! (Case Sensitive):</p>
-  <form autocomplete="off" spellcheck="false">
+  <p id="sub-title">Search For Card By Name! (Case Sensitive):</p>
+  <form autocomplete="off" spellcheck="false" id="cardSearchForm">
     <input class="input-field" name="name" id="search-input">
-    <button class="search-button" type="button" id="searchBtn" style="animation-delay:0.07s">Search</button>
+    <input class="main-button" type="submit" id="searchBtn" style="animation-delay:0.07s" value="Search"></input>
+    <button class="deck-button" type="button" id="deckBtn" style="animation-delay:0.07s">Deck</button>
   </form>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
   <p>View cards by class:</p>
@@ -23,11 +25,15 @@
 =======
 =======
   <p>View Cards By Class:</p>
+=======
+  <p id="sub-title">View Cards By Class:</p>
+>>>>>>> Jonathan-Stillman
   <div class="heroes">
     {{#each classes}}
     <a href="/class/{{{name}}}" class="text-links" id="class-links">{{name}}</a>
     {{/each}}
   </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> main
 
@@ -37,3 +43,8 @@
 </div>
 <div class="container" id="card-container"></div>
 >>>>>>> Changes
+=======
+  <div id="card-container"></div>
+</div>
+
+>>>>>>> Jonathan-Stillman

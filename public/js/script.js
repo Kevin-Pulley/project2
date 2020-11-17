@@ -1,4 +1,5 @@
-$("#searchBtn").on("click", function () {
+$("#cardSearchForm").on("submit", function () {
+  event.preventDefault();
   const searchValue = $("#search-input").val();
   console.log(searchValue);
   const settings = {
@@ -22,12 +23,12 @@ $("#card-container").on("click", "img", function () {
   const img = $(this).attr("src");
   console.log(img);
   const newCard = {
-    image_url: img,
     name: "test",
-    api_url: "test"
+    image_url: img,
+    
   };
 
-  $.post("/api/card", newCard);
+  $.post("/api/deck", newCard);
 });
 
 <<<<<<< HEAD

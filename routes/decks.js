@@ -4,9 +4,9 @@ const deckController = require("../controllers/deck.js");
 
 router.get("/deck/:name", deckController.showDeck);
 router.get("/", deckController.index);
-router.get("/id/:id", deckController.getById);
+router.get("/api/deck", deckController.getById);
 router.get("/name/:name", deckController.getByName);
-router.post("/", deckController.create);
+router.post("/api/deck", deckController.create);
 router.put("/:name", deckController.edit);
 router.delete("/:name", deckController.delete);
 
