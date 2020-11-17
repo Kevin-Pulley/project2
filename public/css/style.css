@@ -34,12 +34,18 @@ a.visited {
 
 /* Body */
 body {
-    background-image: url("board.jpg");
+    background-image: url("/img/hearthstonebg.jpg");
+    /* min-height: 1000px; */
     background-repeat: no-repeat;
-    background: #9e9e9e;
+    background-position: center;
+    background-size: cover;
     color: white;
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
+}
+
+html {
+    min-height: 1000px;
 }
 
 /* Container */
@@ -50,6 +56,7 @@ body {
     justify-content: space-between;
     max-width: 90%;
     margin: 0 auto;
+    /* height: 1000px; */
 }
 
 /* Heroes */
@@ -61,7 +68,7 @@ body {
 }
 
 /* ====== Card Container Begins Here ====== */
-#card-container {
+ /* #card-container {
   width: 200px;
   height: 300px;
   margin-left: auto;
@@ -76,15 +83,15 @@ body {
   animation-iteration-count: infinite;
   transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
   z-index: 1;
-}
+} */
 
 /* Card Hover */
-#card-container:hover {
+ /* #card-container:hover {
     animation: unset;
     margin-top: 18vh;
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-}
-
+}  */
+/* 
 @keyframes animate {
   0% {
     margin-top: 20vh;
@@ -95,7 +102,7 @@ body {
   100% {
     margin-top: 20vh;
   }
-}
+}  */
 /* ====== Card Container Ends Here ====== */
 
 #searchBtn {
@@ -167,7 +174,7 @@ form {
     border-radius: 10px;
     padding: 1px;
     margin: 20px 30px;
-    background: #8ad2ff;
+    background: goldenrod;
     font-size: 30px;
     border: solid;
     transition: all 0.4s ease 0s;
@@ -175,7 +182,7 @@ form {
 
 /* HOVER Text Links / Classes */
 .text-links:hover {
-    background: #434343;
+    background: #000000;
     letter-spacing: 1px;
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
@@ -183,16 +190,34 @@ form {
     transition: all 0.4s ease 0s;
 }
 
-/* Search Button */
+/* Button */
 button {
     padding: 10px;
-    background: #8ad2ff;
+    background: goldenrod;
     font-family: "Courier New", Courier, monospace;
     color: white;
     font-size: 20px;
     border-radius: 10px;
     font-weight: bold;
-    border-style: 5px solid #8ad2ff;
+    border-style: 5px solid goldenrod;
+    display: inline-block;
+    border: solid;
+    transition: all 0.4s ease 0s;
+}
+
+.main-button {
+    padding: 10px;
+    padding-left: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10px;
+    background: goldenrod;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border-style: 5px solid goldenrod;
     display: inline-block;
     border: solid;
     transition: all 0.4s ease 0s;
