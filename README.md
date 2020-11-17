@@ -1,26 +1,26 @@
-# Unit 15: Project 2
+# Unit 15: Project 2: Hearthstone Deck App
 
 ## Overview
-Welcome to Project 2! This is yet another important milestone in your full-stack journey: designing and building your first full-stack web application. You and your team will design and build an app using the MVC paradigm and your own server-side API. You will also continue to add to your professional repertoire with testing, continuous integration and linting tools.
+The motivation for the development was creating a source Hearthstone card players could access to gain knowledge of the cards and build a personlaized deck. Providing access to over 500 cards, users are able to search by card name and class. Functions of the app include, card search, class search, card specifics and local repository. A deck is included so the user can save their selected card options.
 
-## Key Topics
-* Linting
-* Continuous integration
-* Testing
+## Process
+The technology used included APIs, JQuery and ----- Each element was worked in group tandem. Billy and Kevin worked on the backend design as Jonathan and Kate worked on front end. Everyone worked on edits and udpates for the entire app. 
 
-## Comprehension Check
-You will be employer-ready if you can answer the following questions:
-1. Why is TDD?
-2. What is linting?
-3. What is continuous integration?
+## Testing
+AS a user that plays Heathstone, I WANT to search for cards and classes SO THAT I can build a deck to play. 
 
-## Learning Objectives
-You will be employer-competitive if you are able to:
-* Configure linting and continuous integration with Travis CI.
-* Explain and implement unit tests
-* Design, build and deploy a full-stack web application to Heroku
+GIVEN an option to search for cards and classes,
+WHEN I select which type of card I want to search for, then I am presented with a pop up of that card and it's information. 
+WHEN I select a class search, then I am presented with all cards in a sepcific class.
+WHEN the results are returned, then I can view details of the card or class 
+WHEN I click on the card, then I can view all strengths, type, weaknesses and health points. I can then save that card to a deck or close out of it. 
+WHEN I click on the class search, then I am presented with all of the cards in that specific class.
+WHEN the results are returned, then I can view details of that card or class. 
+WHEN I want to view the deck, then I am presented with a seperate page thta holds all saved cards.
+WHEN I want to remove a card, then I can click a button to remove any card from my deck.
 
-## Helpful Links
-[Mocha JS Docs](https://mochajs.org/)
-[Chai JS Docs](https://www.chaijs.com/)
-[Agile Methodology](https://en.wikipedia.org/wiki/Agile_software_development)
+## Contributiors
+* Kevin Pulley
+* Jonathan Stillman
+* Billy Arrasmith
+* Kate Hile

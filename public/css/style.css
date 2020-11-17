@@ -8,6 +8,7 @@
     text-align: center;
 }
 
+/* Visited */
 a,
 a.visited {
   color: white;
@@ -20,6 +21,7 @@ a.visited {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    font-size: 50px;
 }
 
 /* Hearthstone Logo */
@@ -46,6 +48,7 @@ body {
     margin: 0 auto;
 }
 
+/* Heroes */
 .heroes {
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +56,7 @@ body {
     justify-content: center;
 }
 
-/* Card Container Begins Here */
+/* ====== Card Container Begins Here ====== */
 #card-container {
   width: 200px;
   height: 300px;
@@ -71,6 +74,7 @@ body {
   z-index: 1;
 }
 
+/* Card Hover */
 #card-container:hover {
     animation: unset;
     margin-top: 18vh;
@@ -88,7 +92,7 @@ body {
     margin-top: 20vh;
   }
 }
-/* Card Container Ends Here */
+/* ====== Card Container Ends Here ====== */
 
 #searchBtn {
     animation:bouncy 5s infinite linear;
@@ -152,27 +156,42 @@ form {
 }
 
 
-/* Text Links */
+/* Text Links / Classes */
 .text-links {
     text-decoration: none;
     color: white;
     border-radius: 10px;
     padding: 1px;
     margin: 20px 30px;
-    background: #ffd6c9;
+    background: #8ad2ff;
     font-size: 30px;
+    border: solid;
+    transition: all 0.4s ease 0s;
 }
 
-/* Button */
+/* HOVER Text Links / Classes */
+.text-links:hover {
+    background: #434343;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+/* Search Button */
 button {
     padding: 10px;
-    background: #ffd6c9;
+    background: #8ad2ff;
     font-family: "Courier New", Courier, monospace;
     color: white;
     font-size: 20px;
     border-radius: 10px;
     font-weight: bold;
-    border-style: 5px solid #ffd6c9;
+    border-style: 5px solid #8ad2ff;
+    display: inline-block;
+    border: solid;
+    transition: all 0.4s ease 0s;
 }
 
 /* Input */
@@ -202,4 +221,8 @@ input {
         flex-direction: column;
         align-content: center;
     }
+}
+
+#sub-title {
+    font-size: 25px;
 }
