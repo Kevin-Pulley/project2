@@ -9,7 +9,12 @@ let deckController = {
         res.json(req.params.name);
     },
     getById: (req, res) => {
-        res.json(req.params.id);
+       db.Decks.findAll({
+      
+       }).then(function(data){
+           res.json(data)
+
+       })
     },
     getByName: (req, res) => {
         res.json(req.params.name);
