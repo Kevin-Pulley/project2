@@ -1,4 +1,5 @@
 const Deck = require("../models/deck.js");
+const db = require("../models/index.js");
 
 let deckController = {
     index: (req, res) => {
@@ -17,7 +18,10 @@ let deckController = {
         res.json(req.params.name);
     },
     create: (req, res) => {
-        res.json(req.params.body);
+       db.Decks.create({
+           name:"test",
+           image_url: req.body.image_url
+       })
     },
     edit: (req, res) => {
         res.json(req.params.body);

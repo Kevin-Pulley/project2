@@ -37,7 +37,7 @@ $(document).ready(function () {
         name: cardName,
         card_id: classId,
       };
-      $.post("/api/class/:card_id", cardId);
+      $.post("/api/deck", cardId);
 
       const settings = {
         async: true,
@@ -51,7 +51,12 @@ $(document).ready(function () {
         },
       };
 
+
+
       $.ajax(settings).done(function (data) {
+
+
+
         // let filter = data[0].filter(function (item) {
         //     console.log(data)
         //   return item.data[0].img;
