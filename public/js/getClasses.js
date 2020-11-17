@@ -25,7 +25,7 @@
         name: cardName,
         card_id: classId,
       };
-      $.post("/api/class/:card_id", cardId);
+      $.post("/api/deck", cardId);
 
       const settings = {
 =======
@@ -68,6 +68,32 @@ $( document ).ready(function() {
 
 >>>>>>> main
 
+<<<<<<< HEAD
+=======
+
+
+      $.ajax(settings).done(function (data) {
+
+
+
+        // let filter = data[0].filter(function (item) {
+        //     console.log(data)
+        //   return item.data[0].img;
+        //   console.log(filter)
+        // });
+        // console.log(data);
+        $("#card-container").html(`<img src="${data[1].img}"/>`);
+      });
+    });
+    // $("#card-container").on("click", "img", function () {
+    //     const img = $(this).attr("src");
+    //     console.log(img);
+    //     const newCard = {
+    //       image_url: img,
+    //       name: "test",
+    //       api_url: "test"
+    //     };
+>>>>>>> main
 
 <<<<<<< HEAD
     //     $.post("/api/card", newCard);

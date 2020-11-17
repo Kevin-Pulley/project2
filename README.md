@@ -1,7 +1,7 @@
-# Unit 15: Project 2: Hearthstone Deck App
+# Unit 15: Project 2: Build-A-Deck Hearthstone Card App
 
 ## Overview
-The motivation for the development was creating a source Hearthstone card players could access to gain knowledge of the cards and build a personlaized deck. Providing access to over 500 cards, users are able to search by card name and class. Functions of the app include, card search, class search, card specifics and local repository. A deck is included so the user can save their selected card options.
+The motivation for the development was creating a source Hearthstone card players could access to gain knowledge of the cards and build a personlaized deck. Providing access to over 500 cards, 10 classes with the option to search by both. Functions of the app include, card search, class search, card specifics and local repository. A deck is included so the user can save their selected card options.
 
 ## Process
 The technology used included APIs, JQuery and ----- Each element was worked in group tandem. Billy and Kevin worked on the backend design as Jonathan and Kate worked on front end. Everyone worked on edits and udpates for the entire app. 
