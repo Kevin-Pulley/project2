@@ -21,12 +21,12 @@ module.exports = function(app) {
   });
 
   // class route loads class.handlebars
-  app.get("/class", function(req, res) {
-    res.render(path.join(__dirname, "../views/class.handlebars"));
+  app.get("/class/:name", function(req, res) {
+    res.render("class", {class: req.params.name});
   });
 
   // deck route loads deck.handlebars
-  app.get("/deck", function(req, res) {
+  app.get("/deck/", function(req, res) {
     res.render(path.join(__dirname, "../views/deck.handlebars"));
   });
 
