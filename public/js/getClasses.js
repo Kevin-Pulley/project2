@@ -1,23 +1,10 @@
-$(document).ready(function () {
-  let classes = $(".class-container").data("class");
-  console.log(classes);
-  const settings = {
-    async: true,
-    crossDomain: true,
-    url: `https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/classes/${classes}`,
-    method: "GET",
-    headers: {
-      "x-rapidapi-key": "e25253654bmshbe1d4ddbcd23335p1dc5a9jsndabf8328bd41",
-      "x-rapidapi-host": "omgvamp-hearthstone-v1.p.rapidapi.com",
-    },
-  };
+//on document rdy...
+//let class = $(."card-container").data("class");
+// do ajax call
 
-  function getName() {
-    $.get("api/class/:card_id", function (req, res) {
-      let id = req.params.name;
-    });
-  }
 
+
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   $.ajax(settings).done(function (response) {
     //console.log(response);
@@ -44,44 +31,45 @@ $(document).ready(function () {
 =======
   
 
+=======
+
+>>>>>>> main
 $( document ).ready(function() {
     // const classes = document.querySelector("#class")
     let classes = $(".class-container").data("class");
     console.log(classes)
+<<<<<<< HEAD
     
     const settings = {
 >>>>>>> Stashed changes
+=======
+    const settings = {
+>>>>>>> main
         async: true,
         crossDomain: true,
-        url: `https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/${cardName}`,
+        url: `https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/classes/${classes}`,
         method: "GET",
         headers: {
-          "x-rapidapi-key":
-            "e25253654bmshbe1d4ddbcd23335p1dc5a9jsndabf8328bd41",
+          "x-rapidapi-key": "e25253654bmshbe1d4ddbcd23335p1dc5a9jsndabf8328bd41",
           "x-rapidapi-host": "omgvamp-hearthstone-v1.p.rapidapi.com",
         },
       };
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+    $.ajax(settings).done(function(response){
+        console.log(response)
+        for(var i = 0; i < 100; i++){
 
-      $.ajax(settings).done(function (data) {
-        // let filter = data[0].filter(function (item) {
-        //     console.log(data)
-        //   return item.data[0].img;
-        //   console.log(filter)
-        // });
-        // console.log(data);
-        $("#card-container").html(`<img src="${data[1].img}"/>`);
-      });
-    });
-    // $("#card-container").on("click", "img", function () {
-    //     const img = $(this).attr("src");
-    //     console.log(img);
-    //     const newCard = {
-    //       image_url: img,
-    //       name: "test",
-    //       api_url: "test"
-    //     };
+            let b = $("<button>").attr("id", response[i].cardId)
+            b.text(response[i].name);
+            $(".class-container").append(b)
+        }
 
+>>>>>>> main
+
+
+<<<<<<< HEAD
     //     $.post("/api/card", newCard);
     //   });
   });
@@ -134,3 +122,8 @@ $("#card-container").on("click", "img", function () {
 });
 
 >>>>>>> Stashed changes
+=======
+        // $("#class-container").html(`<div>"${response.name}"</div>`);
+    })
+});
+>>>>>>> main

@@ -13,10 +13,7 @@ let classController = {
 
     },
     getById: (req, res) => {
-        db.Class.get({
-            card_id: req.body.card_id,
-            name: req.body.name
-        });
+        res.json(req.params.id);
     },
     getByName: (req, res) => {
         res.json(req.params.name);
@@ -25,10 +22,7 @@ let classController = {
         res.json(req.params.name);
     },
     create: (req, res) => {
-        db.Class.create({
-            card_id: req.body.card_id,
-            name: req.body.name
-        })
+        res.json(req.params.body);
     },
     edit: (req, res) => {
         res.json(req.params.body);
