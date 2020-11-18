@@ -1,4 +1,6 @@
+
 $("#cardSearchForm").on("submit", function () {
+
   event.preventDefault();
   const searchValue = $("#search-input").val();
   console.log(searchValue);
@@ -20,6 +22,8 @@ $("#cardSearchForm").on("submit", function () {
 });
 
 $("#card-container").on("click", "img", function () {
+  toastr.options.positionClass = 'toast-top-right';
+  toastr.success("Card Added To Deck!!");
   const img = $(this).attr("src");
   console.log(img);
   const newCard = {
@@ -27,9 +31,16 @@ $("#card-container").on("click", "img", function () {
     image_url: img,
     
   };
-
+  
   $.post("/api/deck", newCard);
 });
+
+
+$("#deckBtn").on("click", function(event){
+  event.preventDefault();
+  window.location.href="/deck"
+
+})
 
 
 

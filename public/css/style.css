@@ -37,6 +37,15 @@ a.visited {
     -ms-animation: fadeIn ease 10s;
 }
 
+
+.toast{
+
+    top: 80px;
+    padding: 1rem;
+    right: 0px;
+    
+    }
+
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
@@ -62,6 +71,7 @@ a.visited {
     100% {opacity:1;}
 }
 /* ========== Hearthstone Logo / Animation Fade In Ends Here ========== */
+
 
 /* Body */
 body {
@@ -98,7 +108,9 @@ html {
     justify-content: center;
 }
 
+
 /* ========== Card Container Begins Here ========== */
+
  /* #card-container {
   width: 200px;
   height: 300px;
@@ -134,7 +146,11 @@ html {
     margin-top: 20vh;
   }
 }  */
+
+
+
 /* ========== Card Container Ends Here ========== */
+
 
 #searchBtn {
     animation:bouncy 5s infinite linear;
@@ -235,6 +251,7 @@ button {
     border: solid;
     transition: all 0.4s ease 0s;
 }
+
 
 /* Search Button */
 .main-button {
