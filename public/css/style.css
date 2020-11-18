@@ -32,6 +32,14 @@ a.visited {
     margin: 0px 10px;
 }
 
+.toast{
+
+    top: 80px;
+    padding: 1rem;
+    right: 0px;
+    
+    }
+
 /* Body */
 body {
     background-image: url("/img/hearthstonebg.jpg");

@@ -15,13 +15,13 @@ $(document).ready(function () {
   function getName() {
     $.get("api/class/:card_id", function (req, res) {
       let id = req.params.name;
-      console.log(id)
+      console.log(id);
     });
   }
 
   $.ajax(settings).done(function (response) {
     //console.log(response);
-    for (var i = 0; i < 15; i++) {
+    for (var i = 0; i < 99; i++) {
       let b = $("<button>").attr({
         id: response[i].cardId,
         class: "search-button",
@@ -52,31 +52,20 @@ $(document).ready(function () {
         },
       };
 
-
-
       $.ajax(settings).done(function (data) {
-
-
-
-        // let filter = data[0].filter(function (item) {
-        //     console.log(data)
-        //   return item.data[0].img;
-        //   console.log(filter)
-        // });
-        // console.log(data);
-        $("#card-container").html(`<img src="${data[1].img}"/>`);
+        var img1 = document.createElement("img");
+        img1.src = "../img/Vanish.png";
+        if (data[1].img === null) {
+          $("#card-container").html(img1);
+        } else {
+          $("#card-container").html(`<img src="${data[1].img}"/>`);
+        }
       });
     });
-    // $("#card-container").on("click", "img", function () {
-    //     const img = $(this).attr("src");
-    //     console.log(img);
-    //     const newCard = {
-    //       image_url: img,
-    //       name: "test",
-    //       api_url: "test"
-    //     };
-
-    //     $.post("/api/card", newCard);
-    //   });
   });
+});
+
+$("#deckBtn").on("click", function (event) {
+  event.preventDefault();
+  window.location.href = "/deck";
 });
