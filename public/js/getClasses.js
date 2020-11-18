@@ -21,7 +21,7 @@ $(document).ready(function () {
 
   $.ajax(settings).done(function (response) {
     //console.log(response);
-    for (var i = 0; i < 99; i++) {
+    for (var i = 0; i < 50; i++) { // Displays how many classes are shown on the page
       let b = $("<button>").attr({
         id: response[i].cardId,
         class: "search-button",

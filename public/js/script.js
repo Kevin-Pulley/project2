@@ -1,4 +1,6 @@
-$("#cardSearchForm").on("submit", function (event) {
+
+$("#cardSearchForm").on("submit", function () {
+
   event.preventDefault();
   const searchValue = $("#search-input").val();
   console.log(searchValue);

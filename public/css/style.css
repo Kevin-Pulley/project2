@@ -26,11 +26,17 @@ a.visited {
     font-size: 50px;
 }
 
-/* Hearthstone Logo */
+/* ========== Hearthstone Logo / Animation Fade In ========== */
 #hearthstone-logo {
     height: 150px;
     margin: 0px 10px;
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
 }
+
 
 .toast{
 
@@ -39,6 +45,33 @@ a.visited {
     right: 0px;
     
     }
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+/* ========== Hearthstone Logo / Animation Fade In Ends Here ========== */
+
 
 /* Body */
 body {
@@ -75,7 +108,9 @@ html {
     justify-content: center;
 }
 
-/* ====== Card Container Begins Here ====== */
+
+/* ========== Card Container Begins Here ========== */
+
  /* #card-container {
   width: 200px;
   height: 300px;
@@ -111,7 +146,11 @@ html {
     margin-top: 20vh;
   }
 }  */
-/* ====== Card Container Ends Here ====== */
+
+
+
+/* ========== Card Container Ends Here ========== */
+
 
 #searchBtn {
     animation:bouncy 5s infinite linear;
@@ -213,12 +252,13 @@ button {
     transition: all 0.4s ease 0s;
 }
 
+
+/* Search Button */
 .main-button {
     padding: 10px;
-    padding-left: 110px;
     margin-left: auto;
     margin-right: auto;
-    width: 10px;
+    width: 100px;
     background: goldenrod;
     font-family: "Courier New", Courier, monospace;
     color: white;
